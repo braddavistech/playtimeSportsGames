@@ -1,12 +1,96 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Playtime Sports Games, LLC</title>
-<style>
-</style>
+  <title>Playtime Sports Games, LLC</title>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+    html{
+      font-family: "Times New Roman", Times, serif;
+    }
+    .header{
+      position: relative;
+      width: 25vw;
+      height: 17vw;
+      opacity: .4;
+      z-index: 1;
+    }
+    #header{
+      position: absolute;
+      position: absolute;
+      animation-name: flashing;
+      animation-duration: 0.5s;
+    	animation-timing-function: linear;
+    	animation-iteration-count: infinite;
+    	animation-direction: alternate;
+    	animation-play-state: running;
+      animation-delay: 0s;
+	    -webkit-text-stroke-width: .3vw;
+      -webkit-text-stroke-color: black;
+      top: 0vw;
+      padding-top:3vw;
+      font-size: 6vw;
+      width: 100vw;
+      text-align: center;
+      z-index: 2;
+    }
+    #tagline{
+      position: absolute;
+      animation-name: flashing;
+      animation-duration: 0.5s;
+    	animation-timing-function: linear;
+    	animation-iteration-count: infinite;
+    	animation-direction: alternate;
+    	animation-play-state: running;
+      animation-delay: 0s;
+	    -webkit-text-stroke-width: .3vw;
+      -webkit-text-stroke-color: black;
+      top: 9vw;
+      padding-top:1vw;
+      font-size: 4vw;
+      width: 100vw;
+      text-align: center;
+      z-index: 2;
+    }
+    @keyframes flashing {
+      from {color: white;}
+      to {color: red;}
+    }
+    #contact {
+      width: 100vw;
+      background-color: #c4cad3;
+      text-align: center;
+      font-size: 4vw;
+      padding-top: 1.5vw;
+      padding-bottom: 1.5vw;
+      color: black;
+      font-weight: bolder;
+      text-decoration: none;
+    }
+    #contact :hover{
+      color: red;
+    }
+  </style>
 </head>
+
 <body>
-<h1>Test 3</h1>
+
+  <h1 id="header"></h1>
+  <h1 id="tagline"></h1>
+
+  <script>
+
+    var header = {companyName:"PLAYTIME SPORTS GAMES, LLC.", tagline:"For indoor and outdoor events."};
+
+    document.write('<h1><img src="arcade1.png" class="header"><img src="photoBooth1.jpg" class="header"><img src="spongeball.png" class="header"><img src="tents1.png" class="header">');
+    document.getElementById("header").innerHTML = header.companyName;
+    document.getElementById("tagline").innerHTML = header.tagline;
+
+    document.write('<h1 id="contact"><a href="mailto:damondavis07@comcast.net" id="contact">EMAIL US<br></a>(615) 415-4244</h1>');
+
+  </script>
 
 </body>
 </html>
