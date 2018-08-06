@@ -4,20 +4,23 @@
   <title>Playtime Sports Games, LLC</title>
   <meta name="author" content="Brad Davis">
 	<meta name="description" content="Playtime Sports Games, LLC takes pride in providing professional entertainment services for events all over middle Tennessee. These attractions include Photo Booths, Arcade Machines, Skill Games, and Inflatables.">
+  <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
   <style>
     * {
       margin: 0px;
       padding: 0px;
     }
     html{
-      font-family: "Times New Roman", Times, serif;
+      font-family: 'Bree Serif', serif;
+      background-color: white;
     }
     .header{
       position: relative;
       width: 25vw;
       height: 17.5vw;
-      opacity: .4;
+      opacity: .3;
       z-index: 1;
+      background-color: white;
     }
     #header{
       position: absolute;
@@ -31,9 +34,9 @@
       animation-delay: 0s;
 	    -webkit-text-stroke-width: .2vw;
       -webkit-text-stroke-color: black;
-      top: 0vw;
+      top: -2.8vw;
       padding-top:3vw;
-      font-size: 6.1vw;
+      font-size: 7vw;
       width: 100vw;
       text-align: center;
       z-index: 2;
@@ -131,33 +134,44 @@
   <h1 id="header"></h1>
   <h1 id="tagline"></h1>
 
-  <script>
+      <script>
 
-    var header = {companyName:"PLAYTIME SPORTS GAMES, LLC.", tagline:"FOR INDOOR AND OUTDOOR EVENTS."};
+        var header = {companyName:"PLAYTIME SPORTS GAMES, LLC.", tagline:"FOR INDOOR AND OUTDOOR EVENTS."};
 
-    document.write('<h1><img src="arcade1.png" class="header"><img src="photoBooth1.jpg" class="header"><img src="spongeball.png" class="header"><img src="tents1.png" class="header">');
-    document.getElementById("header").innerHTML = header.companyName;
-    document.getElementById("tagline").innerHTML = header.tagline;
+        document.write('<h1><img src="arcade11.png" class="header"><img src="photoBooth1.jpg" class="header"><img src="spongeball2.png" class="header"><img src="tents1.png" class="header">');
+        document.getElementById("header").innerHTML = header.companyName;
+        document.getElementById("tagline").innerHTML = header.tagline;
 
-    document.write('<div class="contact"><a href="mailto:damondavis07@comcast.net" id="contact"><img src="email.png" id="email"></a> &nbsp &nbsp &nbsp &nbsp (615) 415-4244</div>');
+        document.write('<div class="contact"><a href="mailto:damondavis07@comcast.net" id="contact"><img src="email.png" id="email"></a> &nbsp &nbsp &nbsp &nbsp (615) 415-4244</div>');
 
-    document.write('<div class="pages"><a href="www.playtimesportsgames.com/PhotoBooth" id="linkText"><img src="photoBooth3.png" id="photoBooth"><img src="photoBooth4.png" id="photoBooth"><img src="photoBooth5.png" id="photoBooth"><br>PHOTO BOOTH</a></div>');
-    document.write('<div class="pages"><a href="www.playtimesportsgames.com/Arcade" id="linkText"><img src="arcade11.png" id="mainImage"><br>CLASSIC ARCADE INDOOR/OUTDOOR</a></div>');
+        document.write('<div class="pages"><a href="www.playtimesportsgames.com/PhotoBooth" id="linkText"><img src="photoBooth3.png" id="photoBooth"><img src="photoBooth4.png" id="photoBooth"><img src="photoBooth5.png" id="photoBooth"><br>PHOTO BOOTH</a></div>');
+        document.write('<div class="pages"><a href="www.playtimesportsgames.com/ChristmasDecorAndLighting" id="linkText"><img src="arcade11.png" id="mainImage"><br>CHRISTMAS <br> DECOR & LIGHTING</a></div>');
 
-    document.write('<div class="pages"><a href="www.playtimesportsgames.com/TentsAndShades" id="linkText"><img src="tents21.png" id="mainImage"><br>TENTS AND SHADES</a></div>');
-    document.write('<div class="pages"><a href="www.playtimesportsgames.com/Spongeball" id="linkText"><img src="spongeball1.png" id="mainImage"><br>SPONGE BALL CHALLENGE</a></div>');
+        document.write('<div class="pages"><a href="www.playtimesportsgames.com/ObstacleCourses" id="linkText"><img src="obstacle1.png" id="mainImage"><br>OBSTACLE COURSES (INFLATABLES)</a></div>');
+        document.write('<div class="pages"><a href="www.playtimesportsgames.com/Arcade" id="linkText"><img src="arcade11.png" id="mainImage"><br>CLASSIC ARCADES (INDOOR/OUTDOOR)</a></div>');
 
-    document.write('<div class="pages"><a href="www.playtimesportsgames.com/SquareGames" id="linkText"><img src="square2.png" id="mainImage"><br>4 & 9 SQUARE</a></div>');
-    document.write('<div class="pages"><a href="www.playtimesportsgames.com/SportsGames" id="linkText"><img src="sports1.png" id="mainImage"><br>TOSS AND KICK GAMES INFLATABLE</a></div>');
+        document.write('<div class="pages"><a href="www.playtimesportsgames.com/Spongeball" id="linkText"><img src="spongeball2.png" id="mainImage"><br>SPONGE BALL CHALLENGE</a></div>');
+        document.write('<div class="pages"><a href="www.playtimesportsgames.com/SquareGames" id="linkText"><img src="square2.png" id="mainImage"><br>9 SQUARE & 4 SQUARE VOLLEYBALL</a></div>');
 
-    document.write('<div class="pages"><a href="www.playtimesportsgames.com/ObstacleCourses" id="linkText"><img src="obstacle1.png" id="mainImage"><br>OBSTACLE COURSES INFLATABLE</a></div>');
-    document.write('<div class="pages"><a href="www.playtimesportsgames.com/Slides" id="linkText"><img src="slides1.png" id="mainImage"><br>SLIDES <br>INFLATABLE</a></div>');
+        document.write('<div class="pages"><a href="www.playtimesportsgames.com/Slides" id="linkText"><img src="slides1.png" id="mainImage"><br>SLIDES <br>(INFLATABLES)</a></div>');
+        document.write('<div class="pages"><a href="www.playtimesportsgames.com/BounceHouse" id="linkText"><img src="bounce1.png" id="mainImage"><br>BOUNCE FOR KIDS (INFLATABLES)</a></div>');
 
-    document.write('<div class="pages"><a href="www.playtimesportsgames.com/BounceHouse" id="linkText"><img src="bounce1.png" id="mainImage"><br>BOUNCE HOUSES INFLATABLE</a></div>');
-    document.write('<div class="pages"><a href="www.playtimesportsgames.com/BungeeRun" id="linkText"><img src="bungee1.png" id="mainImage"><br>BUNGEE RUN INFLATABLE</a></div>');
+        document.write('<div class="pages"><a href="www.playtimesportsgames.com/SportsGames" id="linkText"><img src="sports1.png" id="mainImage"><br>SPORTS TOSS AND KICK GAMES (INFLATABLES)</a></div>');
+        document.write('<div class="pages"><a href="www.playtimesportsgames.com/BungeeRun" id="linkText"><img src="bungee.png" id="mainImage"><br>BUNGEE CORD RUN (INFLATABLES)</a></div>');
 
-    document.write('<p><br><br></p>')
-  </script>
+        document.write('<div class="pages"><a href="www.playtimesportsgames.com/TentsAndShades" id="linkText"><img src="tents21.png" id="mainImage"><br>TENTS AND SHADES</a></div>');
+        document.write('<div class="pages"><a href="www.playtimesportsgames.com/MediaNet" id="linkText"><img src="slides1.png" id="mainImage"><br>MEDIA NET <br>(SIGNS AND BANNERS)</a></div>');
+
+        document.write('<div class="pages"><a href="www.playtimesportsgames.com/Carnival" id="linkText"><img src="bounce1.png" id="mainImage"><br>CARNIVAL ATTRACTIONS</a></div>');
+        document.write('<div class="pages"><a href="www.playtimesportsgames.com/ConcessionsSnacks" id="linkText"><img src="sports1.png" id="mainImage"><br>CONCESSIONS/SNACKS</a></div>');
+
+        document.write('<div class="pages"><a href="www.playtimesportsgames.com/GeneratorsLights" id="linkText"><img src="bungee1.png" id="mainImage"><br>GENERATORS AND LIGHTS</a></div>');
+        document.write('<div class="pages"><a href="www.playtimesportsgames.com/TableGames" id="linkText"><img src="tents21.png" id="mainImage"><br>TABLE GAMES</a></div>');
+
+        document.write('<p><br><br></p>')
+
+      </script>
+
 
 
 
