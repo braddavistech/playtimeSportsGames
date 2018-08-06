@@ -4,6 +4,11 @@
   <title>Playtime Sports Games, LLC</title>
   <meta name="author" content="Brad Davis">
 	<meta name="description" content="Playtime Sports Games, LLC takes pride in providing professional entertainment services for events all over middle Tennessee. These attractions include Photo Booths, Arcade Machines, Skill Games, and Inflatables.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="blue">
+  <meta name="msapplication-navbutton-color" content="blue">
+  <meta name="apple-mobile-web-app-status-bar-style" content="blue">
+  <style name="AppTheme" parent="AppBaseTheme">
   <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
   <style>
     * {
@@ -53,7 +58,8 @@
 	    -webkit-text-stroke-width: .2vw;
       -webkit-text-stroke-color: black;
       top: 9vw;
-      padding-top:1vw;
+      padding-top: 1vw;
+      padding-bottom: 0px;
       font-size: 4.5vw;
       width: 100vw;
       text-align: center;
@@ -64,24 +70,22 @@
       to {color: red;}
     }
     .contact {
-      position: relative;
+      position: sticky;
       width: 100vw;
-      height: 10vw;
+      height: 9vw;
       background-color: #c4cad3;
-      top: -.85vw;
+      top: 0vw;
       text-align: center;
-      font-size: 4vw;
+      font-size: 6vw;
       color: black;
       line-height: 1;
+      z-index: 3;
     }
     #contact {
       position: relative;
       width: 100vw;
       background-color: #c4cad3;
-      top: 2vw;
-      text-align: center;
-      font-size: 4vw;
-      color: black;
+      vertical-align: middle;
       line-height: 1;
       font-weight: bolder;
       text-decoration: none;
@@ -89,10 +93,12 @@
       text-decoration: none;
     }
     #email{
+      display: inline-block;
       position: relative;
-      margin-top: -1vw;
+      top: 1vw;
       width: 7vw;
-
+      height: 7vw;
+      z-index: 4;
     }
     #photoBooth{
       width:15.13vw;
@@ -122,6 +128,8 @@
       font-weight: bold;
     }
     #mainImage{
+      margin: 0px;
+      padding: 0px;
       width: 45.5vw;
       height: 35vw;
     }
@@ -131,16 +139,12 @@
 
 <body>
 
-  <h1 id="header"></h1>
-  <h1 id="tagline"></h1>
 
       <script>
 
-        var header = {companyName:"PLAYTIME SPORTS GAMES, LLC.", tagline:"FOR INDOOR AND OUTDOOR EVENTS."};
-
         document.write('<h1><img src="arcade11.png" class="header"><img src="photoBooth1.jpg" class="header"><img src="spongeball2.png" class="header"><img src="tents1.png" class="header">');
-        document.getElementById("header").innerHTML = header.companyName;
-        document.getElementById("tagline").innerHTML = header.tagline;
+        document.write('<h1 id="header">PLAYTIME SPORTS GAMES, LLC.</h1>');
+        document.write('<h1 id="tagline">FOR INDOOR AND OUTDOOR EVENTS</h1>');
 
         document.write('<div class="contact"><a href="mailto:damondavis07@comcast.net" id="contact"><img src="email.png" id="email"></a> &nbsp &nbsp &nbsp &nbsp (615) 415-4244</div>');
 

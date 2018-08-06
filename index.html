@@ -4,7 +4,30 @@
   <title>Playtime Sports Games, LLC</title>
   <meta name="author" content="Brad Davis">
 	<meta name="description" content="Playtime Sports Games, LLC takes pride in providing professional entertainment services for events all over middle Tennessee. These attractions include Photo Booths, Arcade Machines, Skill Games, and Inflatables.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="blue">
+  <meta name="msapplication-navbutton-color" content="blue">
+  <meta name="apple-mobile-web-app-status-bar-style" content="blue">
   <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+  <link rel="apple-touch-icon" sized="24x24" href="logo24.png" />
+	<link rel="apple-touch-icon" sized="36x36" href="logo36.png" />
+	<link rel="apple-touch-icon" sized="40x40" href="logo40.png" />
+	<link rel="apple-touch-icon" sized="58x58" href="logo58.png" />
+	<link rel="apple-touch-icon" sized="50x50" href="logo50.png" />
+	<link rel="apple-touch-icon" sized="57x57" href="logo57.png" />
+	<link rel="apple-touch-icon" sized="72x72" href="logo72.png" />
+	<link rel="apple-touch-icon" sized="100x100" href="logo100.png" />
+	<link rel="apple-touch-icon" sized="114x114" href="logo114.png" />
+	<link rel="apple-touch-icon" sized="144x144" href="logo144.png" />
+	<link rel="apple-touch-icon" sized="180x180" href="logo180.png" />
+	<link rel="apple-touch-icon" sized="512x512" href="logo512.png" />
+	<link rel="icon" sized="36x36" href="logo36.png" />
+	<link rel="icon" sized="72x72" href="logo72.png" />
+	<link rel="icon" sized=96x96" href="logo96.png" />
+	<link rel="icon" sized="48x48" href="logo48.png" />
+	<link rel="icon" sized="144x144" href="logo144.png" />
+	<link rel="icon" sized="192x192" href="logo192.png" />
+	<link rel="icon" sized="512x512" href="logo512.png" />
   <style>
     * {
       margin: 0px;
@@ -53,7 +76,8 @@
 	    -webkit-text-stroke-width: .2vw;
       -webkit-text-stroke-color: black;
       top: 9vw;
-      padding-top:1vw;
+      padding-top: 1vw;
+      padding-bottom: 0px;
       font-size: 4.5vw;
       width: 100vw;
       text-align: center;
@@ -64,24 +88,22 @@
       to {color: red;}
     }
     .contact {
-      position: relative;
+      position: sticky;
       width: 100vw;
-      height: 10vw;
+      height: 9vw;
       background-color: #c4cad3;
-      top: -.85vw;
+      top: 0vw;
       text-align: center;
-      font-size: 4vw;
+      font-size: 6vw;
       color: black;
       line-height: 1;
+      z-index: 3;
     }
     #contact {
       position: relative;
       width: 100vw;
       background-color: #c4cad3;
-      top: 2vw;
-      text-align: center;
-      font-size: 4vw;
-      color: black;
+      vertical-align: middle;
       line-height: 1;
       font-weight: bolder;
       text-decoration: none;
@@ -89,10 +111,12 @@
       text-decoration: none;
     }
     #email{
+      display: inline-block;
       position: relative;
-      margin-top: -1vw;
+      top: 1vw;
       width: 7vw;
-
+      height: 7vw;
+      z-index: 4;
     }
     #photoBooth{
       width:15.13vw;
@@ -122,6 +146,8 @@
       font-weight: bold;
     }
     #mainImage{
+      margin: 0px;
+      padding: 0px;
       width: 45.5vw;
       height: 35vw;
     }
@@ -131,16 +157,12 @@
 
 <body>
 
-  <h1 id="header"></h1>
-  <h1 id="tagline"></h1>
 
       <script>
 
-        var header = {companyName:"PLAYTIME SPORTS GAMES, LLC.", tagline:"FOR INDOOR AND OUTDOOR EVENTS."};
-
         document.write('<h1><img src="arcade11.png" class="header"><img src="photoBooth1.jpg" class="header"><img src="spongeball2.png" class="header"><img src="tents1.png" class="header">');
-        document.getElementById("header").innerHTML = header.companyName;
-        document.getElementById("tagline").innerHTML = header.tagline;
+        document.write('<h1 id="header">PLAYTIME SPORTS GAMES, LLC.</h1>');
+        document.write('<h1 id="tagline">FOR INDOOR AND OUTDOOR EVENTS</h1>');
 
         document.write('<div class="contact"><a href="mailto:damondavis07@comcast.net" id="contact"><img src="email.png" id="email"></a> &nbsp &nbsp &nbsp &nbsp (615) 415-4244</div>');
 
