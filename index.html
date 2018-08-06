@@ -48,19 +48,10 @@
     }
     html{
       font-family: 'Bree Serif', serif;
-      background-color: white;
-    }
-    .header{
-      position: relative;
-      width: 25vw;
-      height: 17.5vw;
-      opacity: .3;
-      z-index: 1;
-      background-color: white;
+      background-color: black;
     }
     #header{
-      position: absolute;
-      position: absolute;
+      position: relative;
       animation-name: flashing;
       animation-duration: 1.5s;
       animation-timing-function: linear;
@@ -78,7 +69,7 @@
       z-index: 2;
     }
     #tagline{
-      position: absolute;
+      position: relative;
       animation-name: flashing;
       animation-duration: 1.5s;
       animation-timing-function: linear;
@@ -88,7 +79,7 @@
       animation-delay: 0s;
 	    -webkit-text-stroke-width: .2vw;
       -webkit-text-stroke-color: black;
-      top: 9vw;
+      top:-5vw;
       padding-top: 1vw;
       padding-bottom: 0px;
       font-size: 4.5vw;
@@ -107,8 +98,8 @@
       padding: 0px;
       width: 100vw;
       height: 9vw;
-      background-color: #c4cad3;
-      margin-top: -2vw;
+      background-color: white;
+      margin-top: -4vw;
       text-align: center;
       font-size: 6vw;
       color: black;
@@ -177,11 +168,10 @@
 
       <script>
 
-      document.write('<h1><img src="arcade11.png" class="header"><img src="photoBooth1.jpg" class="header"><img src="spongeball2.png" class="header"><img src="tents1.png" class="header">');
-      document.write('<h1 id="header">PLAYTIME SPORTS GAMES, LLC.</h1>');
-      document.write('<h1 id="tagline">FOR INDOOR AND OUTDOOR EVENTS</h1>');
+        document.write('<h1 id="header">PLAYTIME SPORTS GAMES, LLC.</h1>');
+        document.write('<h1 id="tagline">FOR INDOOR AND OUTDOOR EVENTS</h1>');
 
-      document.write('<div class="contact"><a href="mailto:damondavis07@comcast.net" id="contact"><img src="email.png" id="email"></a> &nbsp &nbsp &nbsp &nbsp (615) 415-4244</div>');
+        document.write('<div class="contact"><a href="mailto:damondavis07@comcast.net" id="contact"><img src="email.png" id="email"></a> &nbsp &nbsp &nbsp &nbsp (615) 415-4244</div>');
 
 
         document.write('<div class="pages"><a href="www.playtimesportsgames.com/PhotoBooth" id="linkText"><img src="photoBooth3.png" id="photoBooth"><img src="photoBooth4.png" id="photoBooth"><img src="photoBooth5.png" id="photoBooth"><br>PHOTO BOOTH</a></div>');
@@ -217,4 +207,3 @@
 
 </body>
 </html>
-
